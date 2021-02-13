@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Students">
+
+    <ListView
+        android:id="@+id/studentsNames"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/change"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:onClick="change"
+            android:text="Active" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/name2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="student name" />
+
+            <EditText
+                android:id="@+id/phone2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="phone num" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/address2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:hint="address" />
+
+            <EditText
+                android:id="@+id/phoneAddress2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="phone address" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dad2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="father name" />
+
+            <EditText
+                android:id="@+id/phoneDad2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="phone num" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/mom2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="mom name" />
+
+            <EditText
+                android:id="@+id/phoneMom2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="phone mom" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:onClick="submit2"
+            android:text="Submit" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40" />
+    </LinearLayout>
+
+</LinearLayout>
